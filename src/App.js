@@ -11,8 +11,19 @@ export default function App() {
       <span>Vamos calcular seu imc</span>
 
       <div className="area-input">
-        <input type="text" placeholder="Peso em (kg) Ex: 123" value={peso} />
-        <input type="text" placeholder="Peso em (kg) Ex: 123" value={altura} />
+        <input
+          type="text"
+          placeholder="Peso em (kg) Ex: 123"
+          value={peso}
+          onChange={(e) => setPeso(e.target.value)}
+        />
+
+        <input
+          type="text"
+          placeholder="Peso em (kg) Ex: 123"
+          value={altura}
+          onChange={(e) => setAltura(e.target.value)}
+        />
 
         <button>Calcular</button>
       </div>
